@@ -1,4 +1,22 @@
-package Week10.PracticeProblems;
+import java.util.Scanner;
 
 public class FactorialCalculation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        if (number < 0) {
+            System.out.println("Invalid input");
+        } else {
+            long factorial = 1;
+
+            for (int i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+
+            System.out.println(factorial);
+        }
+
+        sc.close();
+    }
 }
